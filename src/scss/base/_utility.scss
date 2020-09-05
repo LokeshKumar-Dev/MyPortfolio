@@ -1,0 +1,23 @@
+.u-caps{
+    text-transform: uppercase;
+}
+.u-high{
+    color: $blue;
+}
+.u-italic{
+    font-style: italic;
+}
+.u-high-bg{
+    background-color: #f73101;
+    font-weight: 700;
+    filter: invert(1);
+}
+.u-noselect, .btn {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }

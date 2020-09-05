@@ -1,0 +1,133 @@
+@import url(
+  'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap'
+);
+@import url(
+  'https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,500;0,700;0,900;1,500;1,700;1,900&display=swap'
+);
+@import url("https://use.typekit.net/ixt1fja.css");
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+title{
+  font-family: "Flood","Prompt",sans-serif;
+  font-weight: 700;
+  color: aqua;
+  display: none;
+}
+
+html{
+  // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body{
+  font-family: "Prompt",sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $whi-2;
+  @include respond(tab-port) {
+      padding: 0;
+  }
+}
+//selection
+::selection{
+  background-color: $blue;
+  color: $cor-bg-pri;
+}
+
+//hide SCROLLBAR
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+//======LIGHT MODE======
+html body #root .light{
+  color:$cor-bg-sec;
+  background-color: $whi-2;
+  &:nth-child(even){
+    background-color: $whi-1;
+  }
+  //nav
+  .navigation{
+    &-sec{
+      background-color: black;
+    }
+    &__body-link{
+      color:inherit;
+    }
+    .navigation-icon span{
+      background: $cor-bg-sec;
+    }
+  }
+
+  //hero
+  .hero{
+    &_fade-1 , &_fade-2{
+      color:$fade-l;
+    }
+  }
+
+  //work
+  .work{
+    &-l{
+      background-color: $whi-1;
+    }
+    &-r{
+      .works_cont{
+        background-color: $whi-1;
+        &-subHead{
+          color:$fade;
+        }
+        //btn
+        &-btn{
+          color:$whi-1;
+        }
+      }
+    }
+  }
+
+  //about
+  .about{
+    &-l{
+      background-color: $whi-2;
+    }
+    &-r{
+      &--cont{
+        background-color: $whi-2;
+      }
+    }
+  }
+
+  //footer
+  .toolBelt{
+    background-color: $whi-2;
+  }
+  footer{
+    background-color: $whi-1;
+  }
+}

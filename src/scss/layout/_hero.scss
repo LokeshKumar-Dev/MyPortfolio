@@ -1,0 +1,201 @@
+.hero{
+    background-color: $cor-bg-pri;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    //padding except hero-1
+    &>*:not(:nth-child(3)){
+        padding-top: 5rem;
+    }
+    &_fade{
+        &-1{
+            position: absolute;
+            top: -10rem;
+            left: 0;
+            font-size: 22rem;
+            color:$fade;
+        }
+        &-2{
+            position: absolute;
+            bottom: -10rem;
+            right: 0;
+            font-size: 22rem;
+            color:$fade;
+        }
+        @include respond(phone){
+            &-1, &-2{
+                font-size: 17rem;
+            }
+        }
+        @include other(390){
+            &-1, &-2{
+                font-size: 5rem;
+            }
+        }
+    }
+    &_1{
+        position: relative;
+        font-size: 6.3rem;
+        line-height: 10rem;
+        font-weight: 700;
+        display: flex;
+
+        //media
+        @include respond(tab-port){
+            margin: 2rem 0;
+        }
+        @include respond(phone){
+            flex-direction: column;
+        }
+        @include other(25em){//400px
+            font-size: 5rem;
+        }
+
+        & > h1, h2 > .bold{
+            font-weight: 900;
+        }
+        &-l{
+            overflow: hidden;
+            width: 20%;
+            & > h2{
+                font-weight: 300;
+                //media
+                @include respond(tab-port){
+                    letter-spacing: -1rem;
+                }
+            }
+            //media
+            @include respond(tab-port){
+                width: 30%;
+                .a-hi{
+                    margin-right: 2rem;
+                }
+            }
+            @include respond(phone){
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin: 2rem 0;
+            }
+        }
+        &-r{
+            font-family: "flood-std",sans-serif;
+            margin-left: auto;
+            text-align: right;
+            overflow: hidden;
+            //media
+            @include respond(phone){
+                text-align: center;
+                margin-left: unset;
+            }
+        }
+    }
+    //hero-2
+    &_2{
+        z-index: 0;
+        height: 40%;
+        &-img{
+            position: relative;
+            top: -25rem;
+            width: 100%;
+            //media
+            @include other(82.250em){//1300px
+                top: -30rem;
+            }
+            @include other(50em){//800px
+                top: -27rem;
+            }
+            @include respond(phone){
+                top: -18rem;
+            }
+        }
+        //media
+        @include respond(tab-port){
+            padding-top: 8rem;
+        }
+    }
+    //hero-3
+    &_3{
+        position: relative;
+        display: flex;
+        width: 100%;
+        &-l{
+            width: 30%;
+            overflow: hidden;
+            &>h1{
+                font-size: 4rem;
+                font-weight: 600;
+                text-decoration: underline;
+            }
+            &>h2{
+                font-size: 3rem;
+                font-weight: 400;
+                // margin-right: 30%;
+            }
+        }
+        &-r{
+            align-self: center;
+            margin: 0 auto;
+            & > *{
+                cursor: pointer;
+                backface-visibility: hidden;
+            }
+        }
+        //media
+        @include other(82.250em){//1300px
+            top: 6rem;
+        }
+        
+        @include respond(tab-port){
+            &-l{
+                width: 50%;
+            }
+        }
+    }
+    @include respond(tab-land){
+        padding-top: 4rem;
+        height: 110vh;
+        &_3{
+            top: 1rem;
+        }
+    }
+    @include other(62.5em){//800px
+        height: 90vh;
+        &_1{
+            padding-top: rem;
+        }
+        &_3{
+            top: -8rem;
+        }
+    }
+    // @include other(57em){//890px
+    //     height: 90vh;
+    //     &_3{
+    //         top: -7rem;
+    //     }
+    // }
+    @include other(50em){//800px
+        height: 90vh;
+        &_3{
+            top: -16rem;
+        }
+    }
+    @include respond(phone){
+        height: 90vh;
+        padding-top: 0;
+        &_3{
+            flex-direction: column;
+            top:-20rem;
+            &-l{
+                margin: 0 auto;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+    @include other(25em){//400px
+        &_3{
+            top: -27rem;            
+        }
+    }
+}

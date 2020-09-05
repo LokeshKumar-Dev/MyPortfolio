@@ -1,0 +1,94 @@
+.work{
+    background-color: $cor-bg-sec;
+    display: flex;
+    &-l{
+        background-color: $cor-bg-pri;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > h1{
+            transform:rotate(-90deg);
+            text-align: center;
+            font-size: 16rem;
+        }
+    }
+    &-r{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: .5rem;
+        width: 100%;
+        overflow: hidden;
+        //works
+        .works_cont{
+            background-color: $cor-bg-pri;
+            overflow: hidden;
+            padding: .2rem;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(-4px);
+                box-shadow: 0 2px 4px rgba(#000000, 0.8);
+                .works_cont-img{
+                    filter: saturate(1) blur(0);
+                    transform: scale(1.1);
+                }
+            }
+            &-img{
+                height: 40rem;
+                width: 26rem;
+                margin-bottom: 20px;
+                object-fit: cover;
+                position: relative;
+                transform: scale(0.9);
+                filter: saturate(0.5) blur(2px);
+                transition: all .3s;
+            }
+            &-head{
+                font-size: 4rem;
+                line-height: 40px;
+                font-weight: 500;
+                border-bottom: 1px solid $whi-3;
+            }
+            &-subHead{
+                font-size: 2rem;
+                color: $whi-3;
+                margin-bottom: 10px;
+            }
+            &-btn{
+                display: flex;
+            }
+        }
+    }
+    //media
+    @include other(57.188em){//915px
+        .works_cont{
+            padding: 0;
+        }   
+    }
+    @include respond(tab-port){
+        height: 100vh;
+        .works_cont-img{
+            height: 30rem;
+        }
+    }
+    @include respond(phone){
+        flex-direction: column;
+        height: 110vh;
+        &-l{
+            width: 100%;
+            & > h1{
+                transform:rotate(0deg) !important;
+                text-align: center;
+                font-size: 10rem;
+            }
+        }
+    }
+    @include other(26.250em){//450px
+        height: 170vh;
+        .works_cont{
+            margin: 1rem 0;
+        }  
+    }
+}

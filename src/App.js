@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef, useState } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Navbar from './layouts/Navbar'
+import Hero from './layouts/Hero'
+import Work from './layouts/Work'
+import About from './layouts/About'
+import Footer from './layouts/Footer'
+
+export default function App() {
+    const trigger = useRef();
+    var [Mode, setMode] = useState(true);
+
+    return (
+        <>
+            <Navbar Mode={Mode} setMode={setMode} trigger={trigger}/>
+            <Hero Mode={Mode}/>
+            <Work Mode={Mode}/>
+            <About Mode={Mode}/>
+            <Footer Mode={Mode}/>
+        </>
+    )
 }
-
-export default App;

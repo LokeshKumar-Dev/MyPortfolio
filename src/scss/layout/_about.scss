@@ -1,0 +1,204 @@
+.about{
+    background-color: $cor-bg-pri;
+    display: flex;
+    &-l{
+        background-color: $cor-bg-sec;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > h1{
+            transform:rotate(-90deg);
+            text-align: center;
+            font-size: 12rem;
+            line-height: 90px;
+            min-width: max-content;
+        }
+    }
+    &-r{
+        margin: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        &--img{
+            height: 80%;
+            width: 45%;
+            //about image
+            &>*{
+                height: 100%;
+            }
+        }
+        &--cont{
+            height: 80%;
+            width: 50%;
+            padding: 10px;
+            background-color: $cor-bg-sec;
+            //article
+            .about__p{
+                font-size: 2.2rem;
+                line-height: 3.1rem;
+                padding-left: 5px;
+                border-left: 3px solid $whi-1;
+                &--head{
+                    font-size: 3rem;
+                    font-weight: 900;
+                    line-height: 4rem;
+                }
+            }
+        }
+    }
+    //media
+    @include respond(tab-land){
+        &-r{
+            margin: 1rem;
+            &--cont{
+                height: 90%;
+                //article
+                .about__p{
+                    font-size: 1.9rem;
+                    line-height: 3.1rem;
+                    &--head{
+                        font-size: 3rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    @include other(62.5em){//1000px
+        &--img{
+            height: 90%;
+            width: 40%;
+            margin-right: auto;
+        }
+        &--cont{
+            height: 90%;
+            width: 63%;
+            //article
+            .about__p{
+                font-size: 2.3rem;
+                line-height: 3.3rem;
+                &--head{
+                    font-size: 3.1rem;
+                    line-height: 4.1rem;
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        &-r{
+            margin: .5rem;
+            &--img{
+                height: 90%;
+                width: 30%;
+            }
+            &--cont{
+                //article
+                .about__p{
+                    font-size: 2.3rem;
+                    line-height: 3.3rem;
+                    &--head{
+                        font-size: 3rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    @include other(48.125em){//720px
+        &-r{
+            &--cont{
+                width: 60%;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                //article
+                .about__p{
+                    font-size: 2.2rem;
+                    line-height: 3rem;
+                    &--head{
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        flex-direction: column;
+        height: 170vh;
+        &-l{
+            width: 100%;
+            & > h1{
+                transform:rotate(0deg) !important;
+                text-align: center;
+                font-size: 10rem;
+            }
+        }
+        &-r{
+            margin: 1rem;
+            flex-direction: column;
+            align-items: end;
+            &--img{
+                height: 70%;
+            }
+            &--cont{
+                margin-top: -25rem;
+                height: 50%;
+                width: 90%;
+            }
+        }
+    }
+    @include other(27.5em){//440px
+        height: 140vh;
+        &-l{
+            & > h1{
+                font-size: 8rem;
+            }
+        }
+        &-r{
+            align-items: end;
+            justify-content: space-around;
+            &--img{
+                height: 70%;
+            }
+            &--cont{
+                width: 100%;
+                height: 65%;
+                //article
+                .about__p{
+                    font-size: 1.9rem;
+                    line-height: 2.7rem;
+                    &--head{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+    @include other(23.125em){//360px
+        &-l{
+            & > h1{
+                font-size: 6rem;
+            }
+        }
+        //article
+        .about__p{
+            font-size: 1.7rem;
+            line-height: 2.3rem;
+            &--head{
+                font-size: 2.2rem;
+            }
+        }
+    }
+    @include other(20.625em){
+        //article
+        .about__p{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            &--head{
+                font-size: 2.2rem;
+            }
+        }   
+    }
+}

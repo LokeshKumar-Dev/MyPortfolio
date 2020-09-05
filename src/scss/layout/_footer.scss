@@ -1,0 +1,155 @@
+.Footer {
+    .toolBelt {
+        background-color: $cor-bg-sec;
+        height: 75%;
+
+        &-h1 {
+            font-size: 12rem;
+            text-align: center;
+        }
+
+        &-svg {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            &>:not(:last-child){
+                margin-bottom: 7rem;
+            }
+            &--up,
+            &--down{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .svg{
+                width: 8rem;
+                fill:#a5a5a5;
+                .fO{
+                    width: 100%;
+                    height: 100%;
+                    y:100%;
+                    backface-visibility: hidden;
+                    transition: all .2s;
+                    & > p{
+                        font-size: 3rem;
+                        font-weight: 300;
+                        text-align: center;
+                        cursor: default;
+                    }
+                }
+                &:hover{
+                    &>path{
+                        opacity: .2;
+                    }
+                    .fO{
+                        y:15%;
+                    }
+                }
+            }
+            .html{
+                fill: orangered;
+            }
+            .js{
+                fill: rgb(185, 185, 26);
+                &-p{
+                    font-size: 1.5rem!important;
+                }
+            }
+            .css{
+                fill: royalblue;
+            }
+            .react{
+                fill: rgb(4, 165, 240);
+            }
+            .redux{
+                fill: indigo;
+                &-p{
+                    font-size: 1.5rem!important;
+                }
+            }
+            .ps{
+                fill: rgb(78, 127, 143);
+                &-p{
+                    font-size: 1.3rem!important;
+                }
+            }
+            .dj{
+                fill: teal;
+                &-p{
+                    font-size: 1.5rem!important;
+                }
+            }
+            .filmora{
+                &-p{
+                    font-size: 1.5rem!important;
+                }
+            }
+            .figma{
+                fill: hotpink;;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $cor-bg-pri;
+        height: 25%;
+        .mail{
+            color: inherit;
+            text-decoration: none;
+            font-family: "flood-std","Prompt",sans-serif;
+            font-size: 20px;
+
+        }
+        .socialMedia{
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .svg{
+                height: 40px;
+            }
+            .linkedin{
+                fill: #0251ac;
+            }
+            .twitter{
+                fill: rgb(28, 178, 216);
+            }
+        }
+        .copy{
+            font-size: 1.3rem;
+            color: gray;
+        }
+    }
+    @include respond(phone){
+        .toolBelt {
+            height: 60%;
+            &-h1 {
+                font-size: 7rem;
+                text-align: center;
+            }
+        }
+        footer{
+            height: 40%;
+        }   
+    }
+    @include other(20.625em){
+        .toolBelt {
+            height: 55%;
+            &-h1 {
+                font-size: 4rem;
+                text-align: center;
+            }
+            .svg{
+                width: 6rem;
+            }
+        }
+        footer{
+            height: 45%;
+        }   
+    }
+}
