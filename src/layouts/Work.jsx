@@ -4,6 +4,11 @@ import SideMark from '../components/sideMark';
 import gsap from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+//img
+import movie from '../images/movie.jpg'
+import weather from '../images/weather.jpg'
+import estore from '../images/estore.jpg'
+
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
 }
@@ -11,9 +16,9 @@ export default function Work({Mode}) {
     var trigger = useRef(null);
     //obj works
     const work_detail = [
-        {img_url:'Weather', head:'Weather', subHead:"React & Redux", link: "https://github.com/LokeshKumar-Dev/Whats-Weather", link_sc: "https://lokeshkumar-dev.github.io/Whats-Weather/"},
-        {img_url:'estore', head:'Estore', subHead:"Django", link: "https://github.com/LokeshKumar-Dev/Dstore", link_sc: "https://lokesh123.pythonanywhere.com"},
-        {img_url:'movie-2', head:'MovieBuff', subHead:"React Hooks and OMDb api", link: "https://github.com/LokeshKumar-Dev/MovieBuff", link_sc: "https://lokeshkumar-dev.github.io/MovieBuff/"}
+        {img_url:{weather}, head:'Weather', subHead:"React & Redux", link: "https://github.com/LokeshKumar-Dev/Whats-Weather", link_sc: "https://lokeshkumar-dev.github.io/Whats-Weather/"},
+        {img_url:{estore}, head:'Estore', subHead:"Django", link: "https://github.com/LokeshKumar-Dev/Dstore", link_sc: "https://lokesh123.pythonanywhere.com"},
+        {img_url:{movie}, head:'MovieBuff', subHead:"React Hooks and OMDb api", link: "https://github.com/LokeshKumar-Dev/MovieBuff", link_sc: "https://lokeshkumar-dev.github.io/MovieBuff/"}
     ];
 
     function works(work){//img-url, head, subHead

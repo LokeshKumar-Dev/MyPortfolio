@@ -4,6 +4,10 @@ import gsap from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Emoji from '../components/Emoji';
 
+//img
+import about from '../images/about.jpg'
+import about_phone from '../images/about-phone.webp'
+
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
 }
@@ -42,7 +46,7 @@ export default function About({Mode}) {
             <SideMark layout="about" name="about me"/>
             <div className="about-r">
                 <div className="about-r--img">
-                    <img className="A-ani a-img-a" srcSet="images/about-phone.webp 1x, images/about.jpg 2x" alt="about"/>          
+                    <img className="A-ani a-img-a" srcSet={`${about_phone} 1x, ${about} 2x`} alt="about"/>          
                 </div>
                 <div className="A-ani a-about-a about-r--cont">
                     <article className="about__p">

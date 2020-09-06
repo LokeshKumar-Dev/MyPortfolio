@@ -4,6 +4,10 @@ import { useDencrypt } from "use-dencrypt-effect"//text anime
 import { TimelineLite } from 'gsap/all';
 import gsap from 'gsap/gsap-core';
 
+//img
+import hero from '../images/hero.png'
+import hero_tabPort from '../images/hero-tab_port.png'
+
 //txt anime value
 const values = ["FullStack Dev", "Web Designer", "Frontend Dev", "Photographer", "Editor"];
 const options = {
@@ -78,7 +82,7 @@ export default function Hero({Mode}) {
                 </div>
             </div>
             <div className="hero_2">
-                <img className="ani-2 a-img hero_2-img" srcSet="images/hero-tab_port.png 1x, images/hero.png 2x" alt="Hero"/>
+                <img className="ani-2 a-img hero_2-img" srcSet={`${hero_tabPort} 1x, ${hero} 2x`} alt="Hero"/>
             </div>
             <div className="hero_3">
                 <div className="hero_3-l">
