@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/MovieBuff/static/css/main.17a4c955.chunk.css",
-    "main.js": "/MovieBuff/static/js/main.fa995fe2.chunk.js",
-    "main.js.map": "/MovieBuff/static/js/main.fa995fe2.chunk.js.map",
-    "runtime-main.js": "/MovieBuff/static/js/runtime-main.e7c7f46d.js",
-    "runtime-main.js.map": "/MovieBuff/static/js/runtime-main.e7c7f46d.js.map",
-    "static/js/2.edc5bb94.chunk.js": "/MovieBuff/static/js/2.edc5bb94.chunk.js",
-    "static/js/2.edc5bb94.chunk.js.map": "/MovieBuff/static/js/2.edc5bb94.chunk.js.map",
-    "index.html": "/MovieBuff/index.html",
-    "precache-manifest.c11f18da17425e939429a441bac3cf25.js": "/MovieBuff/precache-manifest.c11f18da17425e939429a441bac3cf25.js",
-    "service-worker.js": "/MovieBuff/service-worker.js",
-    "static/css/main.17a4c955.chunk.css.map": "/MovieBuff/static/css/main.17a4c955.chunk.css.map",
-    "static/js/2.edc5bb94.chunk.js.LICENSE.txt": "/MovieBuff/static/js/2.edc5bb94.chunk.js.LICENSE.txt"
+    "main.css": "/MyPortfolio/static/css/main.a8115f6c.chunk.css",
+    "main.js": "/MyPortfolio/static/js/main.cc350082.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.cc350082.chunk.js.map",
+    "runtime-main.js": "/MyPortfolio/static/js/runtime-main.7e73d9a0.js",
+    "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.7e73d9a0.js.map",
+    "static/js/2.cfc9ea2e.chunk.js": "/MyPortfolio/static/js/2.cfc9ea2e.chunk.js",
+    "static/js/2.cfc9ea2e.chunk.js.map": "/MyPortfolio/static/js/2.cfc9ea2e.chunk.js.map",
+    "index.html": "/MyPortfolio/index.html",
+    "precache-manifest.0d915914883eda664b9de0200a1fb2cd.js": "/MyPortfolio/precache-manifest.0d915914883eda664b9de0200a1fb2cd.js",
+    "service-worker.js": "/MyPortfolio/service-worker.js",
+    "static/css/main.a8115f6c.chunk.css.map": "/MyPortfolio/static/css/main.a8115f6c.chunk.css.map",
+    "static/js/2.cfc9ea2e.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.cfc9ea2e.chunk.js.LICENSE.txt",
+    "static/media/about-phone.webp": "/MyPortfolio/static/media/about-phone.6978953e.webp",
+    "static/media/about.jpg": "/MyPortfolio/static/media/about.a2c4e8a5.jpg",
+    "static/media/estore.jpg": "/MyPortfolio/static/media/estore.695144bf.jpg",
+    "static/media/hero-tab_port.png": "/MyPortfolio/static/media/hero-tab_port.e83096eb.png",
+    "static/media/hero.png": "/MyPortfolio/static/media/hero.6a16548a.png",
+    "static/media/movie.jpg": "/MyPortfolio/static/media/movie.f411ed00.jpg",
+    "static/media/weather.jpg": "/MyPortfolio/static/media/weather.5d8bab56.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e7c7f46d.js",
-    "static/js/2.edc5bb94.chunk.js",
-    "static/css/main.17a4c955.chunk.css",
-    "static/js/main.fa995fe2.chunk.js"
+    "static/js/runtime-main.7e73d9a0.js",
+    "static/js/2.cfc9ea2e.chunk.js",
+    "static/css/main.a8115f6c.chunk.css",
+    "static/js/main.cc350082.chunk.js"
   ]
 }
