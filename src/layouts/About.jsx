@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import SideMark from '../components/sideMark'
 import gsap from 'gsap/gsap-core';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger, CSSPlugin } from 'gsap/all';
 import Emoji from '../components/Emoji';
 
 //img
@@ -9,7 +9,7 @@ import about from '../images/about.jpg'
 import about_phone from '../images/about-phone.webp'
 
 if (typeof window !== "undefined") {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger,CSSPlugin);
 }
 export default function About({Mode}) {
     var trigger = useRef(null);

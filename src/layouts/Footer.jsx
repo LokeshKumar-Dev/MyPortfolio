@@ -1,6 +1,8 @@
 import React from 'react'
 import { HtmlSvg, JsSvg, CssSvg, ReduxSvg, DjSvg, PsSvg, ReactSvg, FilmoraSvg, FigmaSvg, LinkedinSvg, TwitterSvg } from '../components/svg'
 import gsap from 'gsap/gsap-core';
+import { CSSPlugin } from 'gsap/all';
+gsap.registerPlugin(CSSPlugin);
 
 export default function Footer({Mode}) {
     //mouse action

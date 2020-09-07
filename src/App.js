@@ -9,7 +9,6 @@ import Footer from './layouts/Footer'
 export default function App() {
     const trigger = useRef();
     var [Mode, setMode] = useState(true);
-
     return (
         <>
             <Navbar Mode={Mode} setMode={setMode} trigger={trigger}/>

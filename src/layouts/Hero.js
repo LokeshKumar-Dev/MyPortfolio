@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react'
 import { BtnArrow } from '../components/buttons'//btn
-import { useDencrypt } from "use-dencrypt-effect"//text anime
-import { TimelineLite } from 'gsap/all';
-import gsap from 'gsap/gsap-core';
 
 //img
 import hero from '../images/hero.png'
 import hero_tabPort from '../images/hero-tab_port.png'
+
+import { useDencrypt } from "use-dencrypt-effect"//text anime
+import { TimelineLite, CSSPlugin } from 'gsap/all';
+import gsap from 'gsap/gsap-core';
+gsap.registerPlugin( CSSPlugin);
 
 //txt anime value
 const values = ["FullStack Dev", "Web Designer", "Frontend Dev", "Photographer", "Editor"];

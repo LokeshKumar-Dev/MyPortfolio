@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { TimelineLite } from "gsap/all";
+import { gsap, TimelineLite, CSSPlugin } from "gsap/all";
 //svg
 import { RightArrow } from "./svg";
+
+gsap.registerPlugin(CSSPlugin);
 
 //BUTTON ARROW hero
 function BtnArrow() {

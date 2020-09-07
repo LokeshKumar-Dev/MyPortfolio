@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Switch } from '../components/buttons'
 import { TextPlugin, TimelineLite, CSSRulePlugin } from 'gsap/all';
 import gsap from 'gsap/gsap-core';
-import { Linear } from 'gsap/all';
+import { Linear, CSSPlugin } from 'gsap/all';
 import useDencrypt from 'use-dencrypt-effect';
 import { Link } from 'react-scroll'
 
-gsap.registerPlugin( TimelineLite, CSSRulePlugin, TextPlugin );
+gsap.registerPlugin( TimelineLite, CSSRulePlugin, TextPlugin, CSSPlugin );
 
 //txt anime value
 const values = ["|Lokesh.kumara|", "|lo.ki|"];

@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import Works from '../components/Works'
 import SideMark from '../components/sideMark';
 import gsap from 'gsap/gsap-core';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger, CSSPlugin } from 'gsap/all';
 
 //img
 import movie from '../images/movie.jpg'
@@ -10,7 +10,7 @@ import weather from '../images/weather.jpg'
 import estore from '../images/estore.jpg'
 
 if (typeof window !== "undefined") {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, CSSPlugin);
 }
 export default function Work({Mode}) {
     var trigger = useRef(null);
