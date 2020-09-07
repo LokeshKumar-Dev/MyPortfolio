@@ -68,14 +68,14 @@
         }   
     }
     @include respond(tab-port){
-        height: 100vh;
+        height: 120vh;
         .works_cont-img{
             height: 30rem;
         }
     }
     @include respond(phone){
         flex-direction: column;
-        height: 110vh;
+        height: 130vh;
         &-l{
             width: 100%;
             & > h1{
@@ -86,7 +86,7 @@
         }
     }
     @include other(26.250em){//450px
-        height: 170vh;
+        height: 190vh;
         .works_cont{
             margin: 1rem 0;
         }  
