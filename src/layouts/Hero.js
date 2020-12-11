@@ -2,8 +2,7 @@ import React, { useEffect } from 'react'
 import { BtnArrow } from '../components/buttons'//btn
 
 //img
-import hero from '../images/hero.png'
-import hero_tabPort from '../images/hero-tab_port.png'
+import hero from '../images/hero-pc.png'
 
 import { useDencrypt } from "use-dencrypt-effect"//text anime
 import { TimelineLite, CSSPlugin } from 'gsap/all';
@@ -45,6 +44,7 @@ export default function Hero({Mode}) {
     }
 
     useEffect(() => {
+
         function textAnime(){
             let i = 0;
             const action = setInterval(() => {
@@ -69,7 +69,7 @@ export default function Hero({Mode}) {
       }, [dencrypt]);
 
     return (
-        <>
+        <> 
             <header id="hero" className={ Mode ? 'base hero' : 'base hero light' }>
             <h3 className="ani-2 a-fade-1 hero_fade-1 u-caps">lokesh</h3>
             <h3 className="ani-2 a-fade-2 hero_fade-2 u-caps">kumar</h3>
@@ -84,7 +84,7 @@ export default function Hero({Mode}) {
                 </div>
             </div>
             <div className="hero_2">
-                <img className="ani-2 a-img hero_2-img" srcSet={`${hero_tabPort} 1x, ${hero} 2x`} alt="Hero"/>
+                <img className="ani-2 a-img hero_2-img" srcSet={hero} alt="Hero"/>
             </div>
             <div className="hero_3">
                 <div className="hero_3-l">

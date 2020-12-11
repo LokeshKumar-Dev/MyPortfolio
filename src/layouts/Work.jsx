@@ -53,7 +53,7 @@ export default function Work({Mode}) {
         .fromTo('.works_cont',.7, {y:900}, {y:0, stagger:.4, ease:'Power3.out', scrollTrigger:{
             trigger:trigger.current,
             start:'top+=50 bottom-=200',
-            toggleActions: "restart pause play reverse"
+            //toggleActions: "restart pause play reverse"
         }, onComplete:validW});
     },[ trigger ]);
     return (

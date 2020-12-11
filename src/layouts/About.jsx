@@ -35,7 +35,7 @@ export default function About({Mode}) {
         var tl = gsap.timeline({scrollTrigger:{
             trigger:trigger.current,
             start:'top+=50 bottom-=200',
-            toggleActions: "restart pause play reverse"
+            //toggleActions: "restart pause play reverse"
         }});
         tl
         .fromTo('.a-img-a',.8, {x:-500, scale:1.3}, {x:0, scale:1, ease:'Power4.in'})
@@ -50,7 +50,7 @@ export default function About({Mode}) {
                 </div>
                 <div className="A-ani a-about-a about-r--cont">
                     <article className="about__p">
-<h6 className="about__p--head">Who<Emoji symbol="🙍‍♂️" label="smily"/></h6>
+                        <h6 className="about__p--head">Who<Emoji symbol="🙍‍♂️" label="smily"/></h6>
                         <p>
                                 As I said before <span className="u-high-bg u-italic">" I AM LOKESH KUMAR "</span>,
                              My friends call me <span className="u-high-bg">LOKI</span> and others call me <span className="u-high-bg">LOKESSSH</span>. 

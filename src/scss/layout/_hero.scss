@@ -2,7 +2,13 @@
     background-color: $cor-bg-pri;
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 95vh;
+    padding-top: 6rem!important;
+    //media
+    // @include other(82.250em){//1300px
+    //     padding-top: 6rem;
+    // }
+
     //padding except hero-1
     &>*:not(:nth-child(3)){
         padding-top: 5rem;
@@ -93,17 +99,20 @@
     //hero-2
     &_2{
         z-index: 0;
-        height: 40%;
+        height: 25%;
+        @include other(62.5em){//1300px
+            height: 33%;
+        }
         &-img{
             position: relative;
             top: -25rem;
             width: 100%;
             //media
             @include other(82.250em){//1300px
-                top: -30rem;
+                top: -22rem;
             }
             @include other(50em){//800px
-                top: -27rem;
+                top: -25rem;
             }
             @include respond(phone){
                 top: -18rem;
@@ -111,7 +120,7 @@
         }
         //media
         @include respond(tab-port){
-            padding-top: 8rem;
+            padding-top: 9rem!important;
         }
     }
     //hero-3
